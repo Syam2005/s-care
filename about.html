@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Update title and header -->
+<head>
+  <title>S-CARE - About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* Header Styles */
+  .header {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+  }
+
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #9c8164; /* Updated to match skincare theme */
+  }
+
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .main-nav li {
+    margin-left: 1.5rem;
+  }
+
+  .main-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .main-nav a:hover {
+    color: #0066cc;
+  }
+
+  /* About Section */
+  .about {
+    background-color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgba(156, 129, 100, 0.7), rgba(233, 228, 220, 0.8)), 
+                url('https://th.bing.com/th/id/OIP.6FMV18LjBlnBsvlN6sKx-wHaHa?w=166&h=180&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3') center/cover;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+  }
+
+  .btn {
+    background-color: #fff;
+    color: #9c8164;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #9c8164;
+    color: #fff;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #004d99;
+  }
+
+  .media-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* Footer Styles */
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  /* Adjusting Aside Styles */
+  .content-wrapper {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .main-content {
+    flex: 1; /* Makes the main content take the remaining space */
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #f5efe9; /* Updated to a soft beige color */
+    box-shadow: 0 4px 8px rgba(156, 129, 100, 0.15); /* Updated shadow color to match theme */
+  }
+
+  aside h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #9c8164; /* Updated to match brand color */
+    text-align: left;
+  }
+
+  aside p {
+    font-size: 1.1rem;
+    color: #666; /* Slightly darker for better readability */
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  aside p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    aside {
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  </style>
+</head>
+<!-- Update header logo -->
+<header class="header">
+  <div class="container">
+    <div class="logo">S-CARE</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Update main content -->
+<div class="content-wrapper">
+  <div class="main-content">
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Our Journey</h2>
+        <p>S-CARE represents a new era in skincare. We combine cutting-edge science with natural ingredients to create products that truly understand and care for your skin.</p>
+        <p>Our innovative approach focuses on sustainable beauty solutions, using eco-friendly packaging and ethically sourced ingredients that respect both your skin and our planet.</p>
+        <a href="#learn-more" class="btn">Discover More</a>
+      </div>
+
+      <div class="media-container">
+        <video width="235" height="400" autoplay loop muted>
+          <source src="https://cdn.pixabay.com/vimeo/805803791/woman-178472.mp4?width=640&hash=c2f2f3c5c0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c5" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </div>
+
+  <aside>
+    <h1>Revolutionary Skincare for the Modern Age</h1>
+    <p>
+      At S-CARE, we believe that skincare should be both effective and sustainable. Our products are developed using advanced biotechnology combined with carefully selected natural ingredients, creating formulations that deliver real results while being gentle on your skin and the environment.
+    </p>
+    <h1>Innovation Meets Nature</h1>
+    <p>
+      Our state-of-the-art laboratory employs the latest in skincare technology, including AI-driven ingredient analysis and microbiome research. This allows us to create products that work in harmony with your skin's natural processes.
+    </p>
+    <h1>Our Premium Collection</h1>
+    <p>
+      Discover our extensive range of premium skincare solutions:
+      • Gentle Cleansing Foam with Natural Extracts
+      • Vitamin C Brightening Serum
+      • Hyaluronic Acid Moisture Boost
+      • Retinol Night Repair Cream
+      • Peptide Eye Contour Gel
+      • Natural Clay Purifying Mask
+      • Rose Water Balancing Toner
+      • Niacinamide Pore Minimizer
+    </p>
+    <p>
+      We partner with sustainable farms and ethical suppliers worldwide to source the highest quality ingredients. Our commitment to transparency means you can trace every ingredient in our products back to its source.
+    </p>
+    <p>
+      S-CARE's product line includes revolutionary formulations like our signature Bioactive Serum, Enhanced Moisture Complex, and Advanced Repair Cream. Each product undergoes rigorous dermatological testing to ensure maximum efficacy and safety.
+    </p>
+  </aside>
+</div>
+
+<footer class="footer">
+  <p>© 2023 S-CARE Advanced Skincare. All rights reserved.</p>
+</footer>
+</body>
+</html>

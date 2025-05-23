@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S-CARE - Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles same as index.html */
+  
+  .header {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    background-color: #fff;
+  }
+
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #9c8164;
+  }
+
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .main-nav li {
+    margin-left: 1.5rem;
+  }
+
+  .main-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .main-nav a:hover {
+    color: #9c8164;
+  }
+
+    .products {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 20px;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 1.5rem;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: #9c8164;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .add-to-cart {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      background: #9c8164;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background: #7d6850;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">S-CARE</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section class="products">
+    <h2>Our Premium Skincare Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.BZ9G3FZ3l6NhtAfMYY7m3gHaHA?w=225&h=212&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Gentle Cleansing Foam">
+        <div class="product-info">
+          <h3>Gentle Cleansing Foam</h3>
+          <p>Natural extracts for deep yet gentle cleansing</p>
+          <span class="price">$24.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.cph4EMVFjHzIdDV5u-VCsQHaLF?w=136&h=204&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Vitamin C Serum">
+        <div class="product-info">
+          <h3>Vitamin C Brightening Serum</h3>
+          <p>Brightens and evens skin tone</p>
+          <span class="price">$39.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.uEPtDGoS0HDgnE4OWGGn9AHaHa?w=204&h=203&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Hyaluronic Acid">
+        <div class="product-info">
+          <h3>Hyaluronic Acid Boost</h3>
+          <p>Deep hydration for plump, healthy skin</p>
+          <span class="price">$34.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.wPmZiXTIci9HIBueYgSEaAAAAA?w=192&h=192&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Retinol Cream">
+        <div class="product-info">
+          <h3>Retinol Night Repair</h3>
+          <p>Anti-aging night treatment</p>
+          <span class="price">$44.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.plLA6yQqVH7iwAiiVZ1LwAAAAA?w=175&h=206&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Eye Gel">
+        <div class="product-info">
+          <h3>Peptide Eye Contour Gel</h3>
+          <p>Reduces dark circles and puffiness</p>
+          <span class="price">$29.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.wZMuKbitA8EwLqNIcEjIrQHaHa?w=206&h=206&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Clay Mask">
+        <div class="product-info">
+          <h3>Natural Clay Mask</h3>
+          <p>Deep cleansing and purifying</p>
+          <span class="price">$19.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.AjY0skwLl9l92O42EyZbZQHaLH?w=202&h=303&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Rose Toner">
+        <div class="product-info">
+          <h3>Rose Water Toner</h3>
+          <p>Balancing and refreshing</p>
+          <span class="price">$22.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/4465830/pexels-photo-4465830.jpeg" alt="Pore Minimizer">
+        <div class="product-info">
+          <h3>Niacinamide Pore Minimizer</h3>
+          <p>Reduces pore appearance</p>
+          <span class="price">$32.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!-- Same footer as index.html -->
+  </footer>
+</body>
+</html>
