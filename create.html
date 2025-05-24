@@ -6,6 +6,100 @@
   <title>S-CARE - Create Account</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
+    /* Add at the beginning of style section */
+    body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,228,214,0.9));
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wave-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 8s linear infinite;
+}
+
+.wave:nth-child(1) {
+  top: 20%;
+  animation-delay: 0s;
+  background: linear-gradient(90deg, transparent, #9c8164);
+}
+
+.wave:nth-child(2) {
+  top: 40%;
+  animation-delay: -2s;
+  background: linear-gradient(90deg, transparent, rgba(255, 228, 214, 0.9));
+}
+
+.wave:nth-child(3) {
+  top: 60%;
+  animation-delay: -4s;
+  background: linear-gradient(90deg, transparent, white);
+}
+
+.wave:nth-child(4) {
+  top: 80%;
+  animation-delay: -6s;
+  background: linear-gradient(90deg, transparent, #9c8164);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0%) translateY(0) rotate(360deg);
+  }
+}
+
+.sparkle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #9c8164;
+  border-radius: 50%;
+  animation: sparkle-fade;
+  pointer-events: none;
+  box-shadow: 0 0 3px #9c8164;
+}
+
+@keyframes sparkle-fade {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+/* Update existing components for better contrast */
+.header {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(5px);
+}
+
+.product-category,
+.contact-form,
+.login-container,
+.signup-container,
+aside {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,228,214,0.8)) !important;
+}
     /* Base styles same as index.html */
     .signup-container {
       max-width: 400px;
@@ -51,7 +145,12 @@
   <header class="header">
     <!-- Same header as index.html -->
   </header>
-
+  <div class="wave-background">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
   <div class="signup-container">
     <h2>Create Account</h2>
     <form>
@@ -78,4 +177,18 @@
     <!-- Same footer as index.html -->
   </footer>
 </body>
+<script>
+  // Create sparkle effect
+  function createSparkle() {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = Math.random() * 100 + 'vw';
+      sparkle.style.top = Math.random() * 100 + 'vh';
+      sparkle.style.animationDuration = (Math.random() * 2 + 1) + 's';
+      document.querySelector('.wave-background').appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 3000);
+  }
+
+  setInterval(createSparkle, 200);
+</script>
 </html>
