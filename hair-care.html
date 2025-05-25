@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Hair Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Same header structure as lip-care.html -->
+    <main class="product-container">
+        <h1>Hair Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://karmicbeauty.in/cdn/shop/files/Mane_Miracle_Framed.jpg?v=1722340202" alt="Shampoo">
+                <div class="product-info">
+                    <h3>Natural Shampoo</h3>
+                    <p>Gentle cleansing for all hair types</p>
+                    <div class="price">$22.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/fd53fa7c-4042-45bb-b0cf-92ba25cee056.__CR0,20,1080,668_PT0_SX970_V1___.jpg" alt="Conditioner">
+            <div class="product-info">
+                <h3>Deep Conditioner</h3>
+                <p>Intensive moisture treatment</p>
+                <div class="price">$24.99</div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://bioaqua.com.pk/cdn/shop/files/Sadoer_Morocco_Argan_Oil_Hair_Care_Hair_Oil_80ml_2_1200x.jpg?v=1724889267" alt="Hair Oil">
+            <div class="product-info">
+                <h3>Argan Hair Oil</h3>
+                <p>Nourishing treatment for shine</p>
+                <div class="price">$29.99</div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/616S8tOaNUL.jpg" alt="Hair Mask">
+            <div class="product-info">
+                <h3>Repair Hair Mask</h3>
+                <p>Weekly deep treatment</p>
+                <div class="price">$27.99</div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>© 2023 S-CARE. All rights reserved.</p>
+</footer>
+<script src="js/cart.js"></script></body></html>

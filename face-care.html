@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Face Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <main class="product-container">
+        <h1>Face Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/612GERvDs3L._AC_UF1000,1000_QL80_.jpg" alt="Face Wash">
+                <div class="product-info">
+                    <h3>Gentle Face Wash</h3>
+                    <p>pH-balanced cleanser for all skin types</p>
+                    <div class="price">$18.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51W0DqgyDKL.jpg" alt="Face Serum">
+                <div class="product-info">
+                    <h3>Vitamin C Serum</h3>
+                    <p>Brightening and anti-aging formula</p>
+                    <div class="price">$29.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.ahureinaturals.com/cdn/shop/products/Website-Design-Face-Wash-Final.jpg?v=1706788650&width=1946" alt="Face Moisturizer">
+                <div class="product-info">
+                    <h3>Hydrating Moisturizer</h3>
+                    <p>24-hour hydration with ceramides</p>
+                    <div class="price">$24.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81Eu+7sEU4L._AC_UF1000,1000_QL80_.jpg" alt="Face Mask">
+                <div class="product-info">
+                    <h3>Clay Face Mask</h3>
+                    <p>Deep pore cleansing treatment</p>
+                    <div class="price">$16.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 S-CARE. All rights reserved.</p>
+    </footer><script src="js/cart.js"></script>
+</body>
+</html>
