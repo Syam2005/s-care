@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Eye Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <main class="product-container">
+        <h1>Eye Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://bioreva.in/wp-content/uploads/2023/04/Eyes-Repair-1.jpg" alt="Eye Cream">
+                <div class="product-info">
+                    <h3>Revitalizing Eye Cream</h3>
+                    <p>Reduces dark circles and puffiness</p>
+                    <div class="price">$29.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://cdn.shopify.com/s/files/1/0701/4488/5048/files/lions_mane_mushroom_6.png?v=1716221140" alt="Eye Serum">
+                <div class="product-info">
+                    <h3>Anti-aging Eye Serum</h3>
+                    <p>Firms and brightens eye area</p>
+                    <div class="price">$34.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 S-CARE. All rights reserved.</p>
+    </footer>
+</body><script src="js/cart.js"></script>
+</html>

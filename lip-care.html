@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Lip Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <!-- Same header as eye-care.html -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <main class="product-container">
+        <h1>Lip Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71FzC5IAL0L.jpg" alt="Moisturizing Lip Balm">
+                <div class="product-info">
+                    <h3>Moisturizing Lip Balm</h3>
+                    <p>24-hour hydration with natural oils</p>
+                    <div class="price">$12.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71MsUhs0+LL._AC_UF1000,1000_QL80_.jpg" alt="Lip Scrub">
+                <div class="product-info">
+                    <h3>Sugar Lip Scrub</h3>
+                    <p>Gentle exfoliation for smooth lips</p>
+                    <div class="price">$15.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://us.laneige.com/cdn/shop/files/LSM_PDP_1x1_Key_Claims-1.jpg?v=1747755733&width=1080" alt="Overnight Lip Mask">
+                <div class="product-info">
+                    <h3>Overnight Lip Mask</h3>
+                    <p>Intensive repair while you sleep</p>
+                    <div class="price">$19.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.cultbeauty.co.uk/images?url=https://static.thcdn.com/productimg/original/15062874-6425108959046166.jpg&format=webp&auto=avif&width=1200&height=1200&fit=cover" alt="Tinted Lip Oil">
+                <div class="product-info">
+                    <h3>Tinted Lip Oil</h3>
+                    <p>Natural color with nourishing benefits</p>
+                    <div class="price">$16.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 S-CARE. All rights reserved.</p>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>

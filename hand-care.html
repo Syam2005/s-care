@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Hand Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <!-- Same header structure -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <main class="product-container">
+        <h1>Hand Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71FP0nuP0rL._AC_UF1000,1000_QL80_.jpg" alt="Hand Cream">
+                <div class="product-info">
+                    <h3>Nourishing Hand Cream</h3>
+                    <p>Deep moisturizing formula</p>
+                    <div class="price">$14.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://in.loccitane.com/cdn/shop/products/1200_PNG-01EM030K23_RVB_23fe10e6-ad18-4663-9903-41ebb3b971fe.png?v=1701145866" alt="Hand Scrub">
+                <div class="product-info">
+                    <h3>Exfoliating Hand Scrub</h3>
+                    <p>Gentle exfoliation for soft hands</p>
+                    <div class="price">$12.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41HGSdv35BL._BO30,255,255,255_UF900,850_SR1910,1000,0,C_ZA91,500,900,420,420,AmazonEmber,50,4,0,0_PIRIOFOUR-medium,BottomLeft,30,-20_QL100_.jpg" alt="Hand Mask">
+                <div class="product-info">
+                    <h3>Intensive Hand Mask</h3>
+                    <p>Deep treatment for dry hands</p>
+                    <div class="price">$9.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.beautyrelay.com/app-data/products/p1652848699.jpg" alt="Hand Serum">
+                <div class="product-info">
+                    <h3>Anti-aging Hand Serum</h3>
+                    <p>Youth-restoring treatment</p>
+                    <div class="price">$19.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 S-CARE. All rights reserved.</p>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>

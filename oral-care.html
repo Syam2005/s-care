@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Oral Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <!-- Same header structure -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <main class="product-container">
+        <h1>Oral Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.laboratoires-vademecum.com/cdn/shop/files/VDM_Bio_Blan_Nat_Mobile_Incis.jpg?v=1721983022&width=3000" alt="Natural Toothpaste">
+                <div class="product-info">
+                    <h3>Natural Toothpaste</h3>
+                    <p>Fluoride-free with mint flavor</p>
+                    <div class="price">$8.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://umbelorganics.com/wp-content/uploads/2023/01/eco-friendly-dental-products-umbel-organics-1024x597.jpg" alt="Toothbrush">
+                <div class="product-info">
+                    <h3>Bamboo Toothbrush</h3>
+                    <p>Eco-friendly dental care</p>
+                    <div class="price">$6.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRrxUOnfliXvOBcWBr41FpB34Rw7jS13qckhUgL7ydeGYbBhYsEQcdMcBsLBKnIEb8z0&usqp=CAU" alt="Mouthwash">
+                <div class="product-info">
+                    <h3>Natural Mouthwash</h3>
+                    <p>Alcohol-free fresh breath</p>
+                    <div class="price">$12.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://image.made-in-china.com/2f0j00GVroNhUghwkH/Dentoral-Mint-Fluoride-Free-Xylitol-Probiotics-Whitening-Children-s-Toothpaste.webp" alt="Dental Floss">
+                <div class="product-info">
+                    <h3>Organic Dental Floss</h3>
+                    <p>Biodegradable and effective</p>
+                    <div class="price">$5.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 S-CARE. All rights reserved.</p>
+    </footer>
+</body>
+<script src="js/cart.js"></script>
+</html>

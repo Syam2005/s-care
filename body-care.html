@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-CARE - Body Care Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eye-care.css">
+</head>
+<body>
+    <!-- Same header structure -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">S-CARE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <main class="product-container">
+        <h1>Body Care Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61Ug6K16hAL._AC_UF1000,1000_QL80_.jpg" alt="Body Lotion">
+                <div class="product-info">
+                    <h3>Hydrating Body Lotion</h3>
+                    <p>24-hour moisture lock</p>
+                    <div class="price">$22.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71q3r8M-k3L.jpg" alt="Body Scrub">
+                <div class="product-info">
+                    <h3>Natural Body Scrub</h3>
+                    <p>Gentle exfoliation for smooth skin</p>
+                    <div class="price">$18.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm7zUO0nL3p7_MBdyc9I5nvN65dDdaAjrwPQ&s" alt="Body Oil">
+                <div class="product-info">
+                    <h3>Nourishing Body Oil</h3>
+                    <p>Deep hydration and glow</p>
+                    <div class="price">$24.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81gCX6Al+3L.jpg" alt="Body Butter">
+                <div class="product-info">
+                    <h3>Rich Body Butter</h3>
+                    <p>Intensive moisturizing treatment</p>
+                    <div class="price">$26.99</div>
+                    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 S-CARE. All rights reserved.</p>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>
